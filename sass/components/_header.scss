@@ -25,13 +25,12 @@
 }
 
 .headerList--link{
-    @extend %link;
+    @extend %link, %font-LatoBold;
     padding-top: 16px;
     padding-bottom: 16px;
 
     color: getColor('primary-text-color');
     font-size: 16px;
-    font-weight: 700;
     line-height: 1.6;
 
     transition-property: color;
@@ -48,7 +47,7 @@
     @extend %list;
     display: flex;
     align-items: center;
-    margin-left: 225px;
+    margin-left: auto;
 }
 .header-BtnList--item:nth-child(2) {
     display: flex;

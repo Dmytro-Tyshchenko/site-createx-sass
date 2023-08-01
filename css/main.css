@@ -341,7 +341,7 @@ template {
   font-style: normal;
 }
 
-.heroBtn, .header-BtnList--signupBtn {
+.heroBtn, .header-BtnList--signupBtn, .headerList--link {
   font-family: "Lato Bold";
   font-weight: 700;
   font-style: normal;
@@ -370,6 +370,21 @@ template {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .heroContainer, .headerContainer {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heroContainer, .headerContainer {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heroContainer, .headerContainer {
+    width: 1230px;
+  }
 }
 
 .heroFlexbox, .headerList, .headerNav {
@@ -406,7 +421,6 @@ template {
   padding-bottom: 16px;
   color: #424551;
   font-size: 16px;
-  font-weight: 700;
   line-height: 1.6;
   -webkit-transition-property: color;
   transition-property: color;
@@ -426,7 +440,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 225px;
+  margin-left: auto;
 }
 
 .header-BtnList--item:nth-child(2) {
@@ -481,7 +495,6 @@ template {
 
 .heroTitle-box {
   margin-bottom: 259px;
-  margin-right: auto;
 }
 
 .heroBtn {
@@ -597,6 +610,7 @@ template {
 .heroImg {
   margin-top: auto;
   margin-bottom: 189px;
+  margin-left: auto;
 }
 
 .heroList {
