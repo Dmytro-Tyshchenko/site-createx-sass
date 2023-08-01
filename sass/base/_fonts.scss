@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Lato Black";
+    font-weight: 900;
+    font-style: normal;
+    src: local("Lato Black"), 
+    url(/fonts/Lato-Black.ttf) format('truetype'),
+    url(/fonts/Lato-Black.woff) format('woff');
+    }
+
+@font-face {
+    font-family: "Lato Bold";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Lato Bold"), 
+    url(/fonts/Lato-Bold.ttf) format('truetype'),
+    url(/fonts/Lato-Bold.woff) format('woff');
+    }
+
+@font-face {
+    font-family: "Lato Regular";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Lato Regular"), 
+    url(/fonts/Lato-Regular.ttf) format('truetype'),
+    url(/fonts/Lato-Regular.woff) format('woff');
+    }    
+@font-face {
+    font-family: "Lato Thin";
+    font-weight: 100;
+    font-style: normal;
+    src: local("Lato Thin"), 
+    url(/fonts/Lato-Thin.ttf) format('truetype'),
+    url(/fonts/Lato-Thin.woff) format('woff');
+    }    
+
+    %font-LatoBlack {
+        font-family: "Lato Black";
+        font-weight: 900;
+        font-style: normal;
+    }
+    %font-LatoBold {
+        font-family: "Lato Bold";
+        font-weight: 700;
+        font-style: normal;
+    }
+    %font-LatoRegular {
+        font-family: "Lato Regular";
+        font-weight: 400;
+        font-style: normal;
+    }
+    %font-LatoThin {
+        font-family: "Lato Thin";
+        font-weight: 100;
+        font-style: normal;
+    }

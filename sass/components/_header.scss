@@ -1,0 +1,81 @@
+.headerContainer {
+    @extend %container;
+}
+
+.headerNav {
+    @extend %flexbox;
+    position: absolute;
+    top: 20px;
+}
+
+.headerLogo{
+    @extend %link;
+    margin-right: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.headerList { 
+    @extend %list, %flexbox;
+    display: flex;
+
+    &--item:not(:last-child){
+    margin-right: 40px;
+    }
+}
+
+.headerList--link{
+    @extend %link;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    color: getColor('primary-text-color');
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus 
+    {
+    color:getColor('accent-color');
+    }
+}
+.header-BtnList {
+    @extend %list;
+    display: flex;
+    align-items: center;
+    margin-left: 225px;
+}
+.header-BtnList--item:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.header-BtnList--consaltBtn {
+    @include accentBtn (16px, 3.25);
+    display: inline-block;
+    padding: 0 40px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-right: 36px;
+    margin-left: auto; 
+}
+
+
+.header-BtnList--signupBtn{
+    @extend %font-LatoBold;
+    display: inline-block;
+    border: none;
+    background-color: inherit;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.header-BtnList--svg {
+    margin-right: 8px;
+}

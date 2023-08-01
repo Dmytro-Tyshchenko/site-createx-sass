@@ -1,0 +1,26 @@
+@mixin accentBtn ($fontSize, $lineHeight){
+    color: getColor('white-text-color');     
+    background-image: getColor('btn-gradient');
+    cursor: pointer;
+    min-width: auto;
+
+    font-family: 'Lato', sans-serif;
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: 700;
+    line-height: $lineHeight;
+    letter-spacing: 0.5px;
+}
+
+@mixin transperentBtn ($fontSize, $lineHeight) {
+    color: getColor('accent-color');
+    border: 1px solid getColor('accent-color');
+    border-radius: 4px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: 700;
+    line-height: $lineHeight;
+    letter-spacing: 0.5px;
+}
