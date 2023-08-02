@@ -37,7 +37,7 @@
         width: 768px;
     }
     @media screen and (min-width: 1200px) {
-        width: 1230px;
+        width: 1260px;
     }
 }
 
@@ -75,6 +75,27 @@
     color: getColor('title-text-color');
     font-size: 46px;;
     line-height: 1.3;
+}
+
+%round--btn {
+    display: inline-block;
+    cursor:pointer;
+    border: 1px solid transparent;
+    background: transparent;
+    border-radius: 50%;
+    padding: 12px;
+    min-width: 48px;
+    height: 48px;
+
+    &:hover,
+    &:focus {
+    background-image: getColor('btn-gradient');
+    }
+
+    &:hover .teamBtn--svg,
+    &:focus .teamBtn--svg {
+    fill:getColor('white-bgn-color');
+    }
 }
 
 

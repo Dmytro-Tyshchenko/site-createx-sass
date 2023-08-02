@@ -1,0 +1,47 @@
+.cerf {
+    padding-top: 120px;
+}
+
+.cerfContainer {
+    @extend %container, %flexbox;
+    position: relative;
+}
+
+.cerfTextbox {
+    padding-bottom: 120px;
+}
+
+.cerfPreTitle {
+    @extend %p, %pre-title;
+}
+
+.cerfTitle {
+    @extend %h2, %title;
+    margin-bottom: 48px;
+    max-width: 392px;
+}
+
+.cerfText {
+    @extend %p, %font-LatoRegular;
+    margin-bottom: 32px;
+    max-width: 390px;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.cerfList {
+    @extend %list;
+    display:flex ;
+}
+
+.cerfItem:not(:last-child) {
+    margin-right: 40px;
+}
+
+.cerfImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+}
