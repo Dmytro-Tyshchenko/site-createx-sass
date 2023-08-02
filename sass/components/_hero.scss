@@ -67,9 +67,9 @@
 }
 
 .heroTitle {
-    @extend %font-LatoBlack;
+    @extend %font-LatoBlack, %h1;
     margin-bottom: 60px;
-    max-width: 496px;
+    width: 496px;
     
     color: getColor('title-text-color');
     font-size: 64px;
@@ -96,9 +96,10 @@
 }
 
 .heroImg {
+    @extend %img;
     margin-top: auto;
     margin-bottom: 189px;
-    margin-left: auto;
+    margin-left: 180px;
 }
 
 .heroList {
@@ -108,7 +109,7 @@
     justify-content: center;
 }
 .heroList--text {
-    @extend %font-LatoRegular;
+    @extend %font-LatoRegular, %p;
     display: flex;
     align-items: center;
     color: getColor('title-text-color');

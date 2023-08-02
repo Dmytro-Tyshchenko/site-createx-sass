@@ -1,0 +1,63 @@
+.about {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-image: url(../images/bgn-whycreatex.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+.aboutContainer {
+    @extend %container, %flexbox;
+}
+.aboutImg {
+    @extend %img;
+}
+.aboutTextblock {
+    margin-left: 135px;
+}
+
+.aboutPreTitle {
+    @extend %pre-title, %p;
+}
+
+.aboutTitle{
+    @extend %title, %h2;
+    margin-bottom: 40px;
+}
+
+.aboutList {
+    @extend %list;
+    margin-bottom: 48px;
+}
+.aboutItem {
+    display: flex;
+
+    &:not(:last-child){
+        margin-bottom: 12px;
+    }
+}
+
+.aboutItem--svg {
+    position: relative;
+    top: 5px;
+    margin-right: 16px;
+}
+
+.aboutItem--text {
+@extend %font-LatoRegular, %p;
+    width: 358px;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.aboutLink {
+    @extend %link, %font-LatoBold;
+    @include accentBtn (14px, 3.14);
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0 32px;
+
+    letter-spacing: 0.5px;
+}

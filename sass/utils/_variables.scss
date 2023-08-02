@@ -10,8 +10,6 @@
     padding: 0;
 }  
 
-
-
 %h1,
 %h2,
 %h3,
@@ -61,21 +59,23 @@
     margin: -1px;
 }
 
-%section-pre-title {
+%pre-title {
+    @extend %font-LatoBold;
     margin-bottom: 8px;
 
-    color: var(--title-text-color);
+    color: getColor('title-text-color');
     font-size: 16px;
-    font-weight: 700;
     line-height: 1.5;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-%section--title {
-    color: var(--title-text-color);
+%title {
+    @extend %font-LatoBlack;
+    color: getColor('title-text-color');
     font-size: 46px;;
-    font-weight: 900;
     line-height: 1.3;
 }
+
+
 

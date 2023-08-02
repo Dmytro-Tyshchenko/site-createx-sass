@@ -47,7 +47,8 @@
     @extend %list;
     display: flex;
     align-items: center;
-    margin-left: auto;
+    margin-left: 225px;
+    
 }
 .header-BtnList--item:nth-child(2) {
     display: flex;
@@ -61,7 +62,6 @@
     border: 1px solid transparent;
     border-radius: 4px;
     margin-right: 36px;
-    margin-left: auto; 
 }
 
 
@@ -70,6 +70,8 @@
     display: inline-block;
     border: none;
     background-color: inherit;
+    cursor: pointer;
+    min-width: auto;
 
     font-size: 16px;
     line-height: 1.6;
