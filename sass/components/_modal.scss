@@ -1,0 +1,220 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 4, 3, 0.487);
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+} 
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 486px;
+    min-height: 653px;
+    border-radius: 4px;
+    border: 1px solid  #E5E8ED;
+    padding: 48px;
+    background-color: getColor('white-bgn-color');
+}
+
+.modal:before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom:129px;
+    width: 100%;
+    height: 1px;
+    background-color:#E5E8ED;
+}
+
+.modalBlock{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modalTitle {
+    @extend %font-LatoBold;
+    text-align: center;
+    margin-bottom: 24px;
+    
+    color: getColor('title-text-color');
+    font-size: 28px;
+    line-height: 1.5;    
+    }
+
+.modalBtn-cross {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: none;
+    background-color: transparent;
+
+    &:hover .modalBtn--svgCross{
+        fill: getColor('accent-color');
+        cursor:pointer;
+    }
+}
+
+.modalBtn--svgCross {
+    fill:currentColor;
+}
+
+.modalText-upper {
+    @extend %p, %font-LatoRegular;
+    text-align: center;
+    margin-bottom: 24px;
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: getColor('secondary-text-color');
+}
+
+.modalForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalForm--label {
+    @extend %font-LatoRegular;
+    margin-bottom: 8px;
+    
+    font-size: 14px;
+    line-height: 1.5;
+    color: getColor('primary-text-color');
+}
+
+.modalForm--input {
+    margin-bottom: 20px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    padding-top: 11px;
+    border-radius: 4px;
+    border: 1px solid  #D7DADD;
+    background: getColor('white-bgn-color');
+
+    &::placeholder {
+        color: getColor('gray-600');
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+label[for="password"] + input {
+    padding: 14px 16px;
+}
+
+.modalForm--checkbox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.modalForm--checkboxLabel {
+    @extend %font-LatoRegular;
+    display: flex;
+    align-items: center;
+
+    color: getColor('primary-text-color');
+    font-size: 14px;
+    line-height: 1.5; 
+}
+
+.modalForm--checkboxInput {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.modalForm--checkboxIcon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+
+    border: 1px solid #B3B7BC;
+    border-radius: 4px;
+}
+
+.modalForm--checkboxInput:checked + .modalForm--checkboxIcon{
+    border-color: transparent;
+    background-color: getColor('accent-color');
+    background-image: url(../images/checked.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+
+.modalForm--link {
+    @extend %link, %font-LatoRegular;
+    color: vgetColor('accent-color');
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.modalForm--btnSubmit { 
+    @include accentBtn(14px, 3.14);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.modalText-lower {
+    @extend %p, %font-LatoRegular;
+    margin-bottom: 48px;
+
+    color: getColor('primary-text-color');
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.modalForm--linkSignup {
+    @extend %link;
+    color: getColor('accent-color');
+}
+
+.modalSocial-pretitle {
+    @extend %p, %font-LatoRegular;
+    text-align: center;
+    margin-bottom: 16px;
+    color: getColor('secondary-text-color');
+    font-size: 14px;
+    line-height: 1.5; 
+}
+
+.modalSocial--list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+}
+
+.modalSocial--item:not(:last-child){
+    margin-right: 12px;
+}
+
+.modalSocial--svg {
+    fill:getColor('secondary-text-color');
+
+    &:hover {
+        fill: getColor('accent-color')
+    }
+}

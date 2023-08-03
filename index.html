@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +10,6 @@
 <link
 rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 />
-<!-- <link rel="stylesheet" href="./css/style.css"> -->
 <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -900,67 +898,67 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1
         </div>
     </footer>
 <!------------------------------------------------------ MODAL -->
-    <div data-modal class="backdrop is-hidden" >
+    <div data-modal class="backdrop is-hidden">
         <div class="modal">
-            <fieldset class="fieldset-box">
-                <legend class="modal-title">
+            <fieldset class="modalBlock">
+                <legend class="modalTitle">
                     Sign in
                 </legend>
-                <button data-modal-close class="btn-cross" type="button" >
-                    <svg class="svg-cross" width="24" height="24">
+                <button data-modal-close class="modalBtn-cross" type="button" >
+                    <svg class="modalBtn--svgCross" width="24" height="24">
                         <use href="./images/sprite.svg#icon-Cross"></use>
                     </svg>
                 </button>
-                <p class="modal-upper-text">
+                <p class="modalText-upper">
                     Sign in to your account using email and
                     password provided <br> during registration.</p>
-                <form action="" class="form-flexbox">
-                    <label for="mail" class="label-title">Email</label>
-                    <input type="email" class="input-position" id="mail" placeholder="Your working email" name="mail">
-                    <label for="password" class="label-title">Password</label>
-                    <input type="password" class="input-position" id="password" name="psd">
-                    <div class="form-block">
-                        <label class="label-checkbox">
-                            <input class="input-checkbox" type="checkbox"  name="sign-in" value="agree" checked>
-                            <span class="icon-checkbox"></span>
+                <form action="" class="modalForm">
+                    <label for="mail" class="modalForm--label">Email</label>
+                    <input type="email" class="modalForm--input" id="mail" placeholder="Your working email" name="mail">
+                    <label for="password" class="modalForm--label">Password</label>
+                    <input type="password" class="modalForm--input" id="password" name="psd">
+                    <div class="modalForm--checkbox">
+                        <label class="modalForm--checkboxLabel">
+                            <input class="modalForm--checkboxInput" type="checkbox"  name="sign-in" value="agree" checked>
+                            <span class="modalForm--checkboxIcon"></span>
                             Keep me signed in
                         </label>
-                        <a class="link-help link" href="">Forgot password?</a>
+                        <a class="modalForm--link" href="">Forgot password?</a>
                     </div>
-                    <button class="btn-submit" type="submit"> Sign in</button>
-                    <p class="modal-lower-text">
+                    <button class="modalForm--btnSubmit" type="submit"> Sign in</button>
+                    <p class="modalText-lower">
                         Don't have an account? 
-                        <a class="link-signup link" href="">Sign up</a>
+                        <a class="modalForm--linkSignup" href="">Sign up</a>
                     </p>
                 </form>
             </fieldset>
-            <div class="signin-box">
-                <p class="link-pretitle">Or sign in with</p>
-                <ul class="list modal-list">
-                    <li class="modal-item">
+            <div>
+                <p class="modalSocial-pretitle">Or sign in with</p>
+                <ul class="modalSocial--list">
+                    <li class="modalSocial--item">
                         <a href="">
-                            <svg class="modal-svg" width="20" height="20">
+                            <svg class="modalSocial--svg" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-Facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="modal-item">
+                    <li class="modalSocial--item">
                         <a href="">
-                            <svg class="modal-svg" width="20" height="20">
+                            <svg class="modalSocial--svg" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-Google"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="modal-item">
+                    <li class="modalSocial--item">
                         <a href="">
-                            <svg class="modal-svg" width="20" height="20">
+                            <svg class="modalSocial--svg" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-Twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="modal-item">
+                    <li class="modalSocial--item">
                         <a href="">
-                            <svg class="modal-svg" width="20" height="20">
+                            <svg class="modalSocial--svg" width="20" height="20">
                                 <use href="./images/sprite.svg#icon-Linked-In"></use>
                             </svg>
                         </a>

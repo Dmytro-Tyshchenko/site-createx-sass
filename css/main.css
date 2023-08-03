@@ -28,13 +28,13 @@
   font-style: normal;
 }
 
-.footerTextend--link, .footerSignup--subtitle, .footerContact--subtitle, .footerCourse--subtitle, .footerSitemap--subtitle, .blogItem--link, .blogItem--title, .blogItem--dateAccent, .articleAothor--name, .articleTitle, .teamItem--title, .eventsBottomblock--subtitle, .eventsItem--link, .eventsItem--title, .eventsItem--text, .benefitsItem--link, .featureItem--textAccent, .featureItem--title, .aboutLink, .heroBtn, .header-BtnList--signupBtn, .headerList--link, .subscribePreTitle, .blogPreTitle, .teamResponse--preTitle, .teamPreTitle, .cerfPreTitle, .eventsPreTitle, .benefitsPreTitle, .featurereTitle, .aboutPreTitle {
+.modalTitle, .footerTextend--link, .footerSignup--subtitle, .footerContact--subtitle, .footerCourse--subtitle, .footerSitemap--subtitle, .blogItem--link, .blogItem--title, .blogItem--dateAccent, .articleAothor--name, .articleTitle, .teamItem--title, .eventsBottomblock--subtitle, .eventsItem--link, .eventsItem--title, .eventsItem--text, .benefitsItem--link, .featureItem--textAccent, .featureItem--title, .aboutLink, .heroBtn, .header-BtnList--signupBtn, .headerList--link, .subscribePreTitle, .blogPreTitle, .teamResponse--preTitle, .teamPreTitle, .cerfPreTitle, .eventsPreTitle, .benefitsPreTitle, .featurereTitle, .aboutPreTitle {
   font-family: "Lato Bold";
   font-weight: 700;
   font-style: normal;
 }
 
-.footerTextend--text, .footerSignup--text, .footerSignup--placeholder, .footerContact--link, .footerCourse--link, .footerSitemap--link, .footerLogo--text, .subscribeForm--placeholder, .blogItem--text, .blogItem--date, .articleAothor--position, .articleText, .teamItem--pretitle, .cerfText, .eventsItem--subtitle, .eventsItem--time, .benefitsTextblock--text, .featureItem--text, .featureItem--subtitle, .aboutItem--text, .heroList--text {
+.modalSocial-pretitle, .modalText-lower, .modalForm--link, .modalForm--checkboxLabel, .modalForm--label, .modalText-upper, .footerTextend--text, .footerSignup--text, .footerSignup--placeholder, .footerContact--link, .footerCourse--link, .footerSitemap--link, .footerLogo--text, .subscribeForm--placeholder, .blogItem--text, .blogItem--date, .articleAothor--position, .articleText, .teamItem--pretitle, .cerfText, .eventsItem--subtitle, .eventsItem--time, .benefitsTextblock--text, .featureItem--text, .featureItem--subtitle, .aboutItem--text, .heroList--text {
   font-family: "Lato Regular";
   font-weight: 400;
   font-style: normal;
@@ -353,13 +353,13 @@ template {
   display: none;
 }
 
-.footerContact--list, .footerCourse--list, .footerSitemap--list, .footerLogo--list, .blogList, .teamDotList, .teamArticleList, .teamList, .teamBtnlist, .cerfList, .eventsList, .benefitsList, .featureList, .aboutList, .heroList, .header-BtnList, .headerList {
+.modalSocial--list, .footerContact--list, .footerCourse--list, .footerSitemap--list, .footerLogo--list, .blogList, .teamDotList, .teamArticleList, .teamList, .teamBtnlist, .cerfList, .eventsList, .benefitsList, .featureList, .aboutList, .heroList, .header-BtnList, .headerList {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.footerTextend--link, .footerContact--link, .footerCourse--link, .footerSitemap--link, .footerLogo--link, .footerLogo, .blogItem--link, .blogLink-article, .blogLink-video, .blogLink-podcast, .blogLink, .teamItem--link, .eventsBottomblock--link, .eventsItem--link, .benefitsItem--link, .featureItem--link, .featureLink, .aboutLink, .heroLink--courses, .heroLink--about, .headerList--link, .headerLogo {
+.modalForm--linkSignup, .modalForm--link, .footerTextend--link, .footerContact--link, .footerCourse--link, .footerSitemap--link, .footerLogo--link, .footerLogo, .blogItem--link, .blogLink-article, .blogLink-video, .blogLink-podcast, .blogLink, .teamItem--link, .eventsBottomblock--link, .eventsItem--link, .benefitsItem--link, .featureItem--link, .featureLink, .aboutLink, .heroLink--courses, .heroLink--about, .headerList--link, .headerLogo {
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -384,6 +384,9 @@ template {
 .articleAothor--position,
 .teamItem--pretitle,
 .benefitsTextblock--title,
+.modalSocial-pretitle,
+.modalText-lower,
+.modalText-upper,
 .footerTextend--text,
 .footerSignup--text,
 .footerSignup--subtitle,
@@ -555,6 +558,7 @@ template {
   color: #fff;
   background-image: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: 4px;
   min-width: auto;
   font-family: "Lato", sans-serif;
@@ -695,6 +699,7 @@ template {
   color: #fff;
   background-image: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: 4px;
   min-width: auto;
   font-family: "Lato", sans-serif;
@@ -798,6 +803,7 @@ template {
   color: #fff;
   background-image: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: 4px;
   min-width: auto;
   font-family: "Lato", sans-serif;
@@ -1122,6 +1128,7 @@ template {
   color: #fff;
   background-image: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: 4px;
   min-width: auto;
   font-family: "Lato", sans-serif;
@@ -1392,6 +1399,7 @@ template {
   color: #fff;
   background-image: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: 4px;
   min-width: auto;
   font-family: "Lato", sans-serif;
@@ -1532,6 +1540,7 @@ template {
   color: #fff;
   background-image: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: 4px;
   min-width: auto;
   font-family: "Lato", sans-serif;
@@ -1770,4 +1779,260 @@ template {
   opacity: 0.6000000238;
   font-size: 14px;
   line-height: 1.5;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 4, 3, 0.487);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 486px;
+  min-height: 653px;
+  border-radius: 4px;
+  border: 1px solid #E5E8ED;
+  padding: 48px;
+  background-color: #fff;
+}
+
+.modal:before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 129px;
+  width: 100%;
+  height: 1px;
+  background-color: #E5E8ED;
+}
+
+.modalBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modalTitle {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1E212C;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.modalBtn-cross {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  background-color: transparent;
+}
+.modalBtn-cross:hover .modalBtn--svgCross {
+  fill: #FF3F3A;
+  cursor: pointer;
+}
+
+.modalBtn--svgCross {
+  fill: currentColor;
+}
+
+.modalText-upper {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #787A80;
+}
+
+.modalForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modalForm--label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #424551;
+}
+
+.modalForm--input {
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  padding-top: 11px;
+  border-radius: 4px;
+  border: 1px solid #D7DADD;
+  background: #fff;
+}
+.modalForm--input::-webkit-input-placeholder {
+  color: #9A9CA5;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.modalForm--input::-moz-placeholder {
+  color: #9A9CA5;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.modalForm--input:-ms-input-placeholder {
+  color: #9A9CA5;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.modalForm--input::-ms-input-placeholder {
+  color: #9A9CA5;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.modalForm--input::placeholder {
+  color: #9A9CA5;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+label[for=password] + input {
+  padding: 14px 16px;
+}
+
+.modalForm--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.modalForm--checkboxLabel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #424551;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modalForm--checkboxInput {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+.modalForm--checkboxIcon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  border: 1px solid #B3B7BC;
+  border-radius: 4px;
+}
+
+.modalForm--checkboxInput:checked + .modalForm--checkboxIcon {
+  border-color: transparent;
+  background-color: #FF3F3A;
+  background-image: url(../images/checked.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.modalForm--link {
+  color: vgetColor("accent-color");
+  text-align: right;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modalForm--btnSubmit {
+  color: #fff;
+  background-image: linear-gradient(45deg, #FF3F3A 0%, #F75E05 100%);
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: auto;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.14;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.modalText-lower {
+  margin-bottom: 48px;
+  color: #424551;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modalForm--linkSignup {
+  color: #FF3F3A;
+}
+
+.modalSocial-pretitle {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #787A80;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modalSocial--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modalSocial--item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.modalSocial--svg {
+  fill: #787A80;
+}
+.modalSocial--svg:hover {
+  fill: #FF3F3A;
 }/*# sourceMappingURL=main.css.map */
