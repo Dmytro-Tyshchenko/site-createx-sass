@@ -1,0 +1,52 @@
+.subscribe{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 120px;
+    background-color: getColor('secondary-bgn-color');
+}              
+
+.subscribeContainer {
+    @extend %container;
+}
+
+.subscribePreTitle {
+    @extend %p, %pre-title;
+    text-align: center;
+}
+
+.subscribeTitle {
+    @extend %h2, %title;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.subscribeForm-flexbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 180px;
+}
+
+.subscribeForm--placeholder {
+    @extend %font-LatoRegular;
+    margin-right: 24px;
+    border-radius: 4px;
+    border: 1px solid #D7DADD;
+    
+    display: flex;
+    width: 422px;
+    height: 52px;
+    padding: 13px 272px 13px 16px;
+    align-items: center;
+    flex-shrink: 0;
+    
+    color: getColor('gray-600');
+    font-size: 16px;;
+    line-height: 1.6;
+}
+
+.subscribeForm--btn {
+    @include accentBtn(16px, 3.25);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0 40px;
+}   
