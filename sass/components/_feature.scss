@@ -6,6 +6,7 @@
 }
 .featureTitleblock {
     @extend %flexbox;
+    align-items: center
 }
 .featurereTitle {
     @extend %pre-title, %p;
@@ -68,6 +69,7 @@ flex-wrap: wrap;
 
 .featureItem--profilebox {
     padding-left: 32px;
+    padding-top: 32px;
     padding-bottom: auto;
 }
 

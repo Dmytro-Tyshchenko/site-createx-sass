@@ -417,7 +417,7 @@ template {
   margin: 0;
 }
 
-.blogItem--img, .articleAuthor--img, .benefitsTextblock--img, .featureItem--img, .aboutImg, .heroImg {
+.blogItem--img, .articleAuthor--img, .teamImg, .benefitsTextblock--img, .featureItem--img, .aboutImg, .heroImg {
   display: block;
 }
 
@@ -447,9 +447,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .articleTitle {
@@ -510,9 +507,9 @@ template {
 }
 
 .headerList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .headerList--item:not(:last-child) {
   margin-right: 40px;
@@ -823,6 +820,12 @@ template {
   padding-bottom: 180px;
 }
 
+.featureTitleblock {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .featureTitle {
   margin-bottom: 60px;
 }
@@ -875,6 +878,7 @@ template {
 
 .featureItem--profilebox {
   padding-left: 32px;
+  padding-top: 32px;
   padding-bottom: auto;
 }
 
