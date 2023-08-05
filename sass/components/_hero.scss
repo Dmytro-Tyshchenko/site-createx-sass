@@ -4,7 +4,7 @@
     margin: 0;
     background-image: url(../images/bgn-hero.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto auto;
     background-position: 50% 50%;
 }
 
@@ -32,6 +32,10 @@
     font-size: 14px;
     line-height: 1.5;
 
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:before {
         position: absolute;
         right:56%;
@@ -46,6 +50,10 @@
         animation-duration: 3000ms;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
     @keyframes pulse {

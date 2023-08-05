@@ -26,7 +26,7 @@
     background-color: getColor('white-bgn-color');
 }
 
-.modal:before {
+.modal::before {
     display: inline-block;
     position: absolute;
     content: '';
@@ -62,9 +62,17 @@
     border: none;
     background-color: transparent;
 
+        transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover .modalBtn--svgCross{
         fill: getColor('accent-color');
         cursor:pointer;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -214,7 +222,15 @@ label[for="password"] + input {
 .modalSocial--svg {
     fill:getColor('secondary-text-color');
 
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover {
         fill: getColor('accent-color')
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }

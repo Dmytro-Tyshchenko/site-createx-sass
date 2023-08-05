@@ -4,7 +4,7 @@
 
     background-image: url(../images/bgn-team.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 50%;
 }
 
@@ -73,7 +73,13 @@
         bottom: 0;
         left: 0;
         border-radius: 4px;
-        background: linear-gradient(180deg, rgba(30, 33, 44, 0.00) 43.90%, rgba(30, 33, 44, 0.03) 55.21%, rgba(30, 33, 44, 0.33) 68.73%, rgba(30, 33, 44, 0.56) 76.17%, rgba(30, 33, 44, 0.77) 83.75%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+        background: linear-gradient(180deg, rgba(30, 33, 44, 0.00) 43.90%,
+                                            rgba(30, 33, 44, 0.03) 55.21%,
+                                            rgba(30, 33, 44, 0.33) 68.73%,
+                                            rgba(30, 33, 44, 0.56) 76.17%,
+                                            rgba(30, 33, 44, 0.77) 83.75%,
+                                            rgba(30, 33, 44, 0.92) 91.49%,
+                                            #1E212C 100%);
         opacity: 0;
     }
 

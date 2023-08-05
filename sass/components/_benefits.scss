@@ -33,12 +33,20 @@
     font-size: 16px;
     line-height: 1.6;
 
+    transition-property: color;
+   transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus
         { 
         border-radius: 4px;
         border: 1px solid getColor('accent-color');
         color: getColor('accent-color')
+
+        transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
