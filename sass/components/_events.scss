@@ -21,6 +21,10 @@
     margin-bottom: 60px;
     text-align: center;
 }
+// ----slider
+.eventsSlider .slick-track {
+    display: block;
+}
 
 .eventsList {
     @extend %list;
