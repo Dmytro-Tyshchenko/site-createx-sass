@@ -16,36 +16,58 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1
 <!---------------------------------------------------- HEADER -->
     <header>
         <div class="headerContainer">           
-            <nav class="headerNav">   
+            <div class="headerbox-bigscreen">
                 <a id="go to top"   class="headerLogo" href="./index.html">
                     <svg width="130" height="22">
                         <use href="./images/sprite.svg#icon-logo"></use>
                     </svg>
                 </a>
-                <ul class="headerList">
-                    <li class="headerList--item">
-                        <a class="headerList--link" href=""> About Us</a></li>
-                    <li class="headerList--item">
-                        <a class="headerList--link" href="">Courses</a></li>
-                    <li class="headerList--item">
-                        <a class="headerList--link" href="">Events</a></li>
-                    <li class="headerList--item">
-                        <a class="headerList--link" href="">Blog</a></li>
-                    <li class="headerList--item">
-                        <a class="headerList--link" href="">Contacts</a></li>
-                </ul>    
-                <ul class="header-BtnList">
-                    <li class="header-BtnList--item">
-                        <button  type="button" class="header-BtnList--consaltBtn">Get consultation</button>
-                    </li>
-                    <li class="header-BtnList--item">
-                        <svg class="header-BtnList--svg" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-Profile"></use>
+                <button type="button" 
+                        class="brgBtn js-open-menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                        <svg class="brgBtn-svg" width="24" height="24" aria-label="mobile menu bottom">
+                    <use href="./images/sprite-burger-menu.svg#icon-burger-menu"></use>
                         </svg>
-                        <button data-modal-open class="header-BtnList--signupBtn" type="button" >Log in / Register</button>
-                    </li>
-                </ul>
-            </nav>
+                </button>
+                <div class="mobileMenu js-menu-container" id="mobile-menu" >
+                    <div class="mobileMenu-container">
+                        <button type="button" 
+                        class="brgBtn brgBtn-position js-close-menu" 
+                        aria-expanded="false" 
+                        aria-controls="mobile-menu">
+                        <svg class="brgBtn-svg" width="24" height="24" aria-label="mobile menu bottom close">
+                            <use href="./images/sprite-burger-menu.svg#icon-Close-round"></use>
+                        </svg>
+                        </button>
+                        <nav class="headerNav">   
+                            <ul class="headerList">
+                                <li class="headerList--item">
+                                    <a class="headerList--link" href=""> About Us</a></li>
+                                <li class="headerList--item">
+                                    <a class="headerList--link" href="">Courses</a></li>
+                                <li class="headerList--item">
+                                    <a class="headerList--link" href="">Events</a></li>
+                                <li class="headerList--item">
+                                    <a class="headerList--link" href="">Blog</a></li>
+                                <li class="headerList--item">
+                                    <a class="headerList--link" href="">Contacts</a></li>
+                            </ul>    
+                            <ul class="header-BtnList">
+                                <li class="header-BtnList--item">
+                                    <button  type="button" class="header-BtnList--consaltBtn">Get consultation</button>
+                                </li>
+                                <li class="header-BtnList--item">
+                                    <svg class="header-BtnList--svg" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-Profile"></use>
+                                    </svg>
+                                    <button data-modal-open class="header-BtnList--signupBtn" type="button" >Log in / Register</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 <!------------------------------------------------------ MAIN -->
@@ -603,7 +625,7 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1
                                 </div>
                             </article>  
                         </li>
-                     <li>
+                        <li>
                             <article class="article">           
                                 <h2  class="articleTitle">What our students say</h2>                   
                                 <p class="articleText">    
@@ -1088,5 +1110,9 @@ rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"></script>
+<script defer src="js/burger-menu.js"></script>
 </body>
 </html>

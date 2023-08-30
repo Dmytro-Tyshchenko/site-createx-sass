@@ -5,7 +5,7 @@ $ (document).ready(function(){
         slidesToScroll: 3,
         arrows: false,
         vertical: true,
-        verticalSwiping: true
+        verticalSwiping: true,
     });
 
     $('.slider').slick({

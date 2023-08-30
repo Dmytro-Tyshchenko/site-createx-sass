@@ -1,37 +1,162 @@
-.headerContainer {
+.header {
+    position: relative;
+  
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      padding: 21px 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 32px 0;
+    }
+  }
+  // --------------------------------------------
+  .headerContainer {
     @extend %container;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.headerNav {
-    @extend %flexbox;
+  .headerNav {
+    @media screen and (max-width:767px) {
+      align-items: center;
+    }
+    @media screen and (min-width:768px) {
+      display: flex;
+    }
+  }
+
+  .headerbox-bigscreen {
+    display: flex;
     position: absolute;
     top: 20px;
-}
+  }
+// -------burger menu
+  .brgBtn {
+    position: fixed;
+    // right: 15px;
+    left: 200px;
+    top: 16px;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      fill: getColor('primary-text-color');
+  
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+    .brgBtn-position {
+    position: fixed;
+    right: 15px;
+    top: 16px;
+  }
+  
+  .mobileMenu-container {
+    display: flex;
+    @media screen and (max-width: 767px) {
+      display: block;
+      overflow: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  .mobileMenu {
+    @media screen and (max-width: 767px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      background-color: getColor('white-bgn-color');
+      z-index: 999;
+  
+      transform: translateY(-100%);
+      transition: transform 250ms ease-in-out;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  
+  .mobileMenu.is-open {
+    transform: translateY(0);
+  }
+
+// ---------------------------------------
 
 .headerLogo{
-    @extend %link;
+  @extend %link;
+  @media screen and (max-width:767px) {
+    position: fixed;
+    top:16px;
+    left: 15px;
+  }
+  @media screen and (min-width:768px) {  
     margin-right: 60px;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
 }
 
 .headerList { 
-    @extend %list, %flexbox;
+    @extend %list;
+@media screen and (max-width:767px) {
+  &--item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+  @media screen and (min-width:768px) {
+    display: flex;
     align-items: center;
-
+   
     &--item:not(:last-child){
     margin-right: 40px;
     }
+  }
 }
 
 .headerList--link{
     @extend %link, %font-LatoBold;
+    @media screen and (max-width:767px) {
+      font-size: 20px;
+      line-height: 1.6;
+    }
     padding-top: 16px;
     padding-bottom: 16px;
 
     color: getColor('primary-text-color');
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -49,17 +174,27 @@
 }
 .header-BtnList {
     @extend %list;
-    display: flex;
-    align-items: center;
-    margin-left: 225px;
-    
+    @media screen and (max-width:767px) {
+      // position: fixed;
+      // bottom: 20px;
+      margin-top: 90px;
+    }
+    @media screen and (min-width:768px) {
+      display: flex;
+      align-items: center;
+      margin-left: 225px
+    }
 }
+
 .header-BtnList--item:nth-child(2) {
     display: flex;
     align-items: center;
 }
 
 .header-BtnList--consaltBtn {
+  @media screen and (max-width:767px) {
+    margin-bottom: 25px;
+  }
     @include accentBtn (16px, 3.25);
     display: inline-block;
     padding: 0 40px;
@@ -85,6 +220,7 @@
 .header-BtnList--signupBtn{
     @extend %font-LatoBold;
     display: inline-block;
+    padding: 0;
     border: none;
     background-color: inherit;
     cursor: pointer;
