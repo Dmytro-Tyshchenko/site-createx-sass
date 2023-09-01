@@ -1,4 +1,8 @@
 .hero {
+    @media screen and (max-width: 767px) {
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
     padding-top: 200px;
     padding-bottom: 80px;
     margin: 0;
@@ -16,11 +20,19 @@
 }
 
 .heroTitle-box{
+    @media screen and (max-width:767px) {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    }
     margin-bottom: 259px;
 }
 
 .heroBtn {
+
     @extend %font-LatoBold;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
     position: relative;
     display: flex;
     align-items: center;
@@ -76,6 +88,11 @@
 
 .heroTitle {
     @extend %font-LatoBlack, %h1;
+    @media screen and (max-width:767px) {
+        margin-bottom: 130px;
+        width: 220px;
+        font-size: 30px;
+    }
     margin-bottom: 60px;
     width: 496px;
     
@@ -88,6 +105,10 @@
 
 .heroLink--about {
     @extend %link;
+    @media screen and (max-width:767px) {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
     @include transperentBtn(16px, 3.25);
     display: inline-block;
     margin-right: 24px;
@@ -105,6 +126,13 @@
 
 .heroImg {
     @extend %img;
+    @media screen and (max-width:767px) {
+    position: absolute;
+    width: 185px;
+    right: 15px;
+    top:180px;
+
+    }
     margin-top: auto;
     margin-bottom: 189px;
     margin-left: 180px;
@@ -112,12 +140,20 @@
 
 .heroList {
     @extend %list;
+    @media screen and (max-width:767px) {
+    flex-direction: column;
+    margin-top: 20px;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .heroList--text {
     @extend %font-LatoRegular, %p;
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
     display: flex;
     align-items: center;
     color: getColor('title-text-color');
@@ -126,8 +162,14 @@
     line-height: 1.6;
     
 }
+
+
+
 .heroList--number { 
     @extend %font-LatoBlack;
+    @media screen and (max-width:767px) {
+        margin: 0;
+    }
     display: inline-block;
     margin-right: 12px;
 
@@ -137,6 +179,10 @@
 }
 
 .heroList--svg {
+    @media screen and (max-width:767px) {
+        margin: 0;
+        margin-top: 10px;
+    }
     margin-right: 66px;
     margin-left: 66px;
 }

@@ -30,17 +30,12 @@
     }
   }
 
-  .headerbox-bigscreen {
-    display: flex;
-    position: absolute;
-    top: 20px;
-  }
+
 // -------burger menu
   .brgBtn {
     position: fixed;
-    // right: 15px;
-    left: 200px;
-    top: 16px;
+    right: 16px;
+    top: 15px;
     display: inline-flex;
     padding: 0;
     margin: 0;
@@ -95,6 +90,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
+      overflow: scroll;
       margin: 0;
       background-color: getColor('white-bgn-color');
       z-index: 999;
@@ -113,13 +109,20 @@
 
 // ---------------------------------------
 
+.headerbox-bigscreen {
+  display: flex;
+  position: absolute;
+  top: 20px;
+
+}
+
 .headerLogo{
   @extend %link;
-  @media screen and (max-width:767px) {
-    position: fixed;
-    top:16px;
-    left: 15px;
-  }
+  // @media screen and (max-width:767px) {
+  //   position: fixed;
+  //   top:16px;
+  //   left: 15px;
+  // }
   @media screen and (min-width:768px) {  
     margin-right: 60px;
     padding-top: 15px;

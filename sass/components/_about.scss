@@ -1,4 +1,8 @@
 .about {
+    @media screen and (max-width:767px) {
+        padding-top: 70px;
+        padding-bottom: 70px
+    }
     padding-top: 180px;
     padding-bottom: 180px;
     background-image: url(../images/bgn-whycreatex.png);
@@ -8,11 +12,21 @@
 }
 .aboutContainer {
     @extend %container, %flexbox;
+    @media screen and (max-width:767px) {
+        display: block;
+    
+    }
 }
 .aboutImg {
+    @media screen and (max-width:767px) {
+        display: none;
+    }
     @extend %img;
 }
 .aboutTextblock {
+    @media screen and (max-width:767px) {
+        margin: 0;
+    }
     margin-left: 135px;
 }
 
@@ -22,6 +36,7 @@
 
 .aboutTitle{
     @extend %title, %h2;
+
     margin-bottom: 40px;
 }
 
@@ -45,7 +60,11 @@
 
 .aboutItem--text {
 @extend %font-LatoRegular, %p;
+@media screen and (max-width:767px) {
+    width: 270px;
+}
     width: 358px;
+
 
     font-size: 16px;
     line-height: 1.6;

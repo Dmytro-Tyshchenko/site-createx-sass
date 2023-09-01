@@ -60,6 +60,9 @@
 
 %pre-title {
     @extend %font-LatoBold;
+    @media screen and (max-width:767px) {
+        font-size: 12px;
+    }
     margin-bottom: 8px;
 
     color: getColor('title-text-color');
@@ -71,6 +74,9 @@
 
 %title {
     @extend %font-LatoBlack;
+    @media screen and (max-width:767px) {
+        font-size: 25px;
+    }
     color: getColor('title-text-color');
     font-size: 46px;;
     line-height: 1.3;
