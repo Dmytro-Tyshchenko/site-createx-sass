@@ -5,12 +5,22 @@
 }
 .footerContainer {
     @extend %container;
-    display: flex;
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+    
     padding-bottom: 60px;
 }
 
 .footerLogo-block {
-    margin-right: 80px;
+    @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-right: 80px;
+    }
+    
 }
 .footerLogo {
     @extend %link;
@@ -59,9 +69,24 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-    
+
+    // -------------------------------------------------------
+.mobileBlock{
+    @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+
+        display: flex;
+}
+
 .footerSitemap--block {
-    margin-right: 79px;
+    @media screen and (max-width:767px) {
+        margin-right: 40px;
+    }
+    @media screen and (min-width:768px) {
+        margin-right: 79px;
+    }
+    
 }
 
 .footerSitemap--subtitle {
@@ -90,8 +115,12 @@
     line-height: 1.6;
 }
 
+// -------------------------------------------------
 .footerCourse--block{
-    margin-right: 79px;
+    @media screen and (min-width:767px) {
+        margin-right: 79px;
+    }
+   
 }
 .footerCourse--subtitle {
     @extend %p, %font-LatoBold;
@@ -120,8 +149,15 @@
     line-height: 1.6;
 }
 
+// -----------------------------------------
 .footerContact--block {
-    margin-right: 75px;
+    @media screen and (max-width:767px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width:768px) {
+        margin-right: 75px;
+    }
+    
 }
 .footerContact--subtitle {
     @extend %p, %font-LatoBold;
@@ -160,6 +196,7 @@
         }
 }
 
+// ---------------------------------------------
 .footerSignup--subtitle {
     @extend %p, %font-LatoBold;
     margin-bottom: 24px;
@@ -198,8 +235,13 @@
 
 .footerSignup--svg {
     position: absolute;
-    right: 12px;
-    bottom: 130px;
+    top: 58px;
+    left: 250px;
+    @media screen and (min-width:768px) {
+        right: 12px;
+        bottom: 130px;
+    }
+
     
     fill: getColor('white-text-color');
 }

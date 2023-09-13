@@ -1,4 +1,8 @@
 .benefits {
+ @media screen and (max-width:767px) {
+    padding-bottom: 70px;
+ }
+
     padding-bottom: 120px;
 }
 .benefitsContainer {
@@ -6,24 +10,41 @@
 }
 .benefitsPreTitle {
     @extend %p, %pre-title;
-    text-align: center;
+    @media screen and (min-width:768px) {
+        text-align: center;
+    }
+    
 }
 
 .benefitsTitle {
     @extend %h2, %title;
-    margin-bottom: 60px;
-    text-align: center;
+    margin-bottom: 10px;
+    @media screen and (min-width:768px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
 }
 
 .benefitsList {
     @extend %list;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 60px;
+    @media screen and (max-width:767px) {
+        display: block;
+        margin-bottom: 30px;
+
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+
 }
 .benefitsItem--link {
     @extend %link, %font-LatoBold;
+    @media screen and (max-width:767px) {
+        padding: 10px;
+    }
     display: inline-block;
     border: 1px solid transparent;
     padding: 10px 75px;
@@ -34,7 +55,7 @@
     line-height: 1.6;
 
     transition-property: color;
-   transition-duration: 250ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -56,6 +77,9 @@
 }
 .benefitsTextblock {
     @extend %flexbox;
+    @media screen and (max-width:767px) {
+        display: block;
+    }
 }
 .benefitsTextblock--title {
     @extend %h3, %font-LatoBlack;
@@ -67,6 +91,9 @@
 }
 .benefitsTextblock--text{
     @extend %p, %font-LatoRegular;
+    @media screen and (max-width:767px) {
+        font-size: 20px;
+    }
     max-width: 495px;
 
     font-size: 16px;
@@ -74,5 +101,8 @@
 }
 .benefitsTextblock--img {
     @extend %img;
+    @media screen and (max-width:767px) {
+        width: 290px;
+    }
     margin-left: auto;
 }

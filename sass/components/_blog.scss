@@ -1,4 +1,8 @@
 .blog {
+    @media screen and (max-width:767px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
     padding-top: 120px;
     padding-bottom: 180px;
 }                                                                         
@@ -8,7 +12,8 @@
 }
 
 .blogTitle-block {
-    display: flex;
+        display: flex;
+    
 }
 
 .blogPreTitle {
@@ -22,6 +27,9 @@
 .blogLink {
     @extend %link;
     @include accentBtn(16px, 3.25);
+    @media screen and (max-width:767px) {
+        padding: 0 10px;
+    }
     display: inline-block;
     margin-top: auto;
     margin-left: auto;
@@ -30,6 +38,10 @@
 
 .blogList {
     @extend %list;
+    @media screen and (max-width:767px) {
+        display: block;
+        margin-top: 30px;
+    }
     display: flex;
     margin-top: 60px;
 }
@@ -39,6 +51,9 @@
     max-width: 390px;
 
     &:not(:last-child) {
+        @media screen and (max-width:767px) {
+            margin-bottom: 20px;
+        }
         margin-right: 29px;
     }
 }
@@ -53,6 +68,9 @@
 
 .blogItem--img {
     @extend %img;
+    @media screen and (max-width:767px) {
+        width: 290px;
+    }
     margin-bottom: 16px;
 }
 

@@ -6,12 +6,29 @@ $ (document).ready(function(){
         arrows: false,
         vertical: true,
         verticalSwiping: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
     $('.slider').slick({
         speed: 300,
         slidesToShow:4,
-        arrows: false
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
     $(".prev-btn").click(function () {
         $(".slider").slick("slickPrev");

@@ -1,41 +1,73 @@
 .subscribe{
-    display: flex;
-    align-items: flex-end;
-    padding-top: 120px;
-    background-color: getColor('secondary-bgn-color');
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: flex-end;
+        padding-top: 120px;
+        background-color: getColor('secondary-bgn-color');
+    }
+
 }              
 
 .subscribeContainer {
     @extend %container;
 }
+.img-left {
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+
+
 
 .subscribePreTitle {
     @extend %p, %pre-title;
-    text-align: center;
+    @media screen and (min-width:768px) {
+        text-align: center;
+    }
+
 }
 
 .subscribeTitle {
     @extend %h2, %title;
+    @media screen and (min-width:768px) {
+        text-align: center;
+    }
     margin-bottom: 60px;
-    text-align: center;
 }
 
 .subscribeForm-flexbox {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 180px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 180px;
+    }
+    margin-bottom: 100px;
+
 }
 
 .subscribeForm--placeholder {
     @extend %font-LatoRegular;
-    margin-right: 24px;
+    @media screen and (max-width:767px) {
+        min-width: 290px;
+        margin-bottom: 15px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 16px;
+
+
+    }
+    @media screen and (min-width:768px) {
+        margin-right: 24px;
+        padding: 13px 272px 13px 16px;
+        width: 422px;
+    }
+
     border-radius: 4px;
     border: 1px solid #D7DADD;
     
     display: flex;
-    width: 422px;
     height: 52px;
-    padding: 13px 272px 13px 16px;
+   
     align-items: center;
     flex-shrink: 0;
     
@@ -50,3 +82,9 @@
     border-radius: 4px;
     padding: 0 40px;
 }   
+.img-rignt {
+    @media screen and (max-width:767px) {
+    display: none;
+    }
+
+}
